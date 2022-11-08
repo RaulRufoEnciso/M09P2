@@ -1,0 +1,69 @@
+/*---------------------------- BODY ----------------------------*/
+
+body {
+    margin: 0 auto;
+}
+/*---------------------------- NAV ----------------------------*/
+nav {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    padding: 15px;
+    z-index: 99999999;
+    position: sticky;
+    float: right;
+}
+
+nav > ul {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    float: right;
+}
+nav > ul > li {
+    display: inline-block;
+    width: 12%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    float: right;
+
+}
+
+nav > ul > li:hover{
+    background-color: dimgray;
+    float: right;
+
+}
+/*---------------------------- HEADER ----------------------------*/
+
+.imagen_header {
+    width: 100%;
+}
+.imagen_header > img {
+    width: 100%;
+}
+.texto_header{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+    
+}
+.texto_header > p{
+font-size: 1.2rem;
+}
+/*---------------------------- IMAGENES ----------------------------*/
+.img_nosotros1{
+    width: 100%;
+}
+.img_nosotros1 > img{
+    width: 100%;
+}
+.img_nosotros2{
+    width: 100%;
+}
+.img_nosotros2 > img{
+    width: 100%;
+}
