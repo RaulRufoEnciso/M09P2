@@ -3,6 +3,10 @@
 body {
     margin: 0 auto;
 }
+main{
+    width: 70%;
+    margin: auto;
+}
 /*---------------------------- NAV ----------------------------*/
 nav {
     background-color: black;
@@ -12,6 +16,7 @@ nav {
     z-index: 99999999;
     position: sticky;
     float: right;
+    top: 0px;
 }
 
 nav > ul {
@@ -54,16 +59,130 @@ nav > ul > li:hover{
 .texto_header > p{
 font-size: 1.2rem;
 }
+/*---------------------------- SOBRE NOSOTROS ----------------------------*/
+#pnosotros1 {
+    width: 60%;
+    float: right;
+}
+#pnosotros2 {
+    width: 60%;
+    float: left;
+}
+
+.clearfix{
+    clear: both;
+}
+
+
 /*---------------------------- IMAGENES ----------------------------*/
+/*Sobre nosotros*/
 .img_nosotros1{
-    width: 100%;
+    float: left;
+    width: 20%;
 }
 .img_nosotros1 > img{
     width: 100%;
 }
 .img_nosotros2{
+    width: 20%;    
+    float: right;
+}
+.img_nosotros2 >img{
     width: 100%;
 }
-.img_nosotros2 > img{
+/*Gred*/
+.mc_Grid > div > img{
     width: 100%;
+}
+.entrantes{
+    grid-area: entrantes;
+}
+.pasta{
+    grid-area: pasta;
+}
+.pescado{
+    grid-area: pescado;
+}
+.carne{
+    grid-area: carne;
+}
+/*---------------------------- CARTA ----------------------------*/
+.mc_Grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "menu menu menu"
+                         "menu1 texto1 texto1"
+                         "menu1 entrantes pasta"
+                         "menu2 texto2 texto2"
+                         "menu2 pescado carne";
+    gap: 10px;
+}
+.div_menu{
+    background-color: blue;
+    grid-area: menu;
+    border-radius: 20px;
+    text-align: center;
+}
+.menu_1{
+    grid-area: menu1;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto_grid1{
+    grid-area: texto1;
+}
+.menu_2{
+    grid-area: menu2;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto_grid2{
+    grid-area: texto2;
+}
+/*---------------------------- GALERIA ----------------------------*/
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.div_img_flex{
+    width: 24%;
+}
+.img_flex {
+    width: 100%;
+}
+/*---------------------------- FOOTER ----------------------------*/
+footer {
+    border-top: 1px solid rgba(162, 163, 165, 0.2);
+    background-color: grey;;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 2%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.img_correo, .img_phone {
+    display: inline;
+    margin: 10px;
+}
+footer > p {
+    display: inline;
+}
+.iz_footer {
+    width: 20%;
+    float: right;
+}
+.iz_footer > p {
+    display: inline;
 }
